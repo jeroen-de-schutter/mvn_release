@@ -1,14 +1,25 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.realdolmen.jdcq390</groupId>
   <artifactId>mvn_release_demo</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>mvn_release_demo</name>
   <url>http://maven.apache.org</url>
+  
+  <scm>
+    <connection>scm:git:https://github.com/jeroen-de-schutter/mvn_release.git</connection>
+    <tag>HEAD</tag>
+  </scm>
+    <distributionManagement>
+    <repository>
+      <id>myRepoId</id>
+      <name>myCompanyReporsitory</name>
+      <url>file:///C:/target/dist</url>
+    </repository>
+  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
